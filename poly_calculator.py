@@ -33,3 +33,7 @@ class Rectangle:
     # Method to calculate how many times a given shape can fit inside the rectangle.
     def get_amount_inside(self, shape):
         return self.get_area() // shape.get_area()
+
+    # Special method to define the string representation of the Rectangle object.
+    def __str__(self):
+        return f"Rectangle(width={self.width}, height={self.height})"
