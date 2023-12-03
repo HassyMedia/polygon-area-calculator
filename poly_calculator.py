@@ -23,3 +23,9 @@ class Rectangle:
     # Method to calculate the diagonal of the rectangle.
     def get_diagonal(self):
         return (self.width ** 2 + self.height ** 2) ** .5
+
+    # Method to return a string that visually represents the rectangle using asterisks (*).
+    def get_picture(self):
+        if self.width > 50 or self.height > 50:
+            return "Too big for picture."
+        return ("*" * self.width + "\n") * self.height
