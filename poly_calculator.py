@@ -59,3 +59,21 @@ class Square(Rectangle):
     def __str__(self):
         return f"Square(side={self.width})"
 
+# Example usage of the polygon area calculator.
+rect = Rectangle(10, 5)
+print(rect.get_area())  # Output: 50
+rect.set_height(3)
+print(rect.get_perimeter())  # Output: 26
+print(rect)  # Output: Rectangle(width=10, height=3)
+print(rect.get_picture())
+
+sq = Square(9)
+print(sq.get_area())  # Output: 81
+sq.set_side(4)
+print(sq.get_diagonal())  # Output: 5.656854249492381
+print(sq)  # Output: Square(side=4)
+print(sq.get_picture())
+
+rect.set_height(8)
+rect.set_width(16)
+print(rect.get_amount_inside(sq))  # Output: 8
