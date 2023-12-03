@@ -42,3 +42,16 @@ class Square(Rectangle):
     # Constructor: Initializes a new instance of the Square class with equal width and height.
     def __init__(self, side):
         super().__init__(side, side)
+
+    # Method to set all sides of the square.
+    def set_side(self, side):
+        self.width = self.height = side
+
+    # Override set_width method for the square.
+    def set_width(self, width):
+        self.set_side(width)
+
+    # Override set_height method for the square.
+    def set_height(self, height):
+        self.set_side(height)
+
