@@ -29,3 +29,7 @@ class Rectangle:
         if self.width > 50 or self.height > 50:
             return "Too big for picture."
         return ("*" * self.width + "\n") * self.height
+
+    # Method to calculate how many times a given shape can fit inside the rectangle.
+    def get_amount_inside(self, shape):
+        return self.get_area() // shape.get_area()
