@@ -37,3 +37,8 @@ class Rectangle:
     # Special method to define the string representation of the Rectangle object.
     def __str__(self):
         return f"Rectangle(width={self.width}, height={self.height})"
+
+class Square(Rectangle):
+    # Constructor: Initializes a new instance of the Square class with equal width and height.
+    def __init__(self, side):
+        super().__init__(side, side)
