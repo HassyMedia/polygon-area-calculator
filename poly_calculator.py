@@ -55,3 +55,7 @@ class Square(Rectangle):
     def set_height(self, height):
         self.set_side(height)
 
+    # Special method to define the string representation of the Square object.
+    def __str__(self):
+        return f"Square(side={self.width})"
+
