@@ -11,3 +11,15 @@ class Rectangle:
     # Method to set the height of the rectangle.
     def set_height(self, height):
         self.height = height
+
+    # Method to calculate the area of the rectangle.
+    def get_area(self):
+        return self.width * self.height
+
+    # Method to calculate the perimeter of the rectangle.
+    def get_perimeter(self):
+        return 2 * self.width + 2 * self.height
+
+    # Method to calculate the diagonal of the rectangle.
+    def get_diagonal(self):
+        return (self.width ** 2 + self.height ** 2) ** .5
